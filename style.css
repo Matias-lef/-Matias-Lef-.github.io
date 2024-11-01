@@ -1,8 +1,36 @@
-header{
+header {
+	text-align: center;
 	color: black;
 	background-color: rgba(194, 145, 46, 0.884);
-	text-align: center;
+	padding: 5px;
 }
+.fijo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; 
+    z-index: 999;
+}  
+@keyframes girar {
+	from {
+	  transform: rotateY(0deg);
+	}
+	to {
+	  transform: rotateY(360deg);
+	}
+}
+  
+.curza_logo {
+	float: right;
+	animation: girar 5s 1 forwards;
+}
+  
+.curza_logo img {
+	width: 200px;
+	height: 200px;
+}
+
 body{
 	background-color: rgb(248, 221, 170);
 }
@@ -10,7 +38,7 @@ nav{
 	background-color: rgb(194, 145, 46, 0.884);
 	text-align: center;
 }
-ul{
+ol{
 	list-style-type: none;
 	display: contents;
 }
@@ -19,6 +47,7 @@ h1{
 }
 p{
 	text-align: justify;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 figure{
 	text-align: center;
@@ -32,3 +61,14 @@ footer{
 	background-size: contain;
 	font-size: small;
 }
+
+#section{
+	max-height: 300px; 
+	overflow-y: auto; 
+}
+primero {
+	position: sticky;
+	top: 0;
+	background-color: #f0f0f0; /* Color de fondo opcional */
+	padding: 10px;
+  }

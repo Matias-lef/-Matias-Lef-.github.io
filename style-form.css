@@ -1,3 +1,11 @@
+.fijo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background-color: transparent; 
+    z-index: 999;
+}
 h1{
     text-align: center;
     color: #000;
@@ -10,6 +18,25 @@ body{
     line-height: 1,3em;
     margin: 0;
 }
+
+@keyframes girar {
+	from {
+	  transform: rotateY(0deg);
+	}
+	to {
+	  transform: rotateY(360deg);
+	}
+}
+.curza_logo{
+    float: right;	
+	animation: girar 5s 1 forwards;
+}
+.curza_logo img {
+	width: 200px;
+	height: 200px;
+}
+
+
 .formulario{
     list-style-type: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,7 +55,7 @@ li{
     margin: 10px;
     padding: 2px;
 }
-ul{
+ol{
     margin: 0;
     padding: 0;
 }
