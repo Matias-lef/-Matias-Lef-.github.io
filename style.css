@@ -4,14 +4,7 @@ header {
 	background-color: rgba(194, 145, 46, 0.884);
 	padding: 5px;
 }
-.fijo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent; 
-    z-index: 999;
-}  
+
 @keyframes girar {
 	from {
 	  transform: rotateY(0deg);
@@ -65,12 +58,7 @@ footer{
 #section{
 	max-height: 300px; 
 	overflow-y: auto; 
-}
-primero {
-	position: sticky;
-	top: 0;
-	background-color: #f0f0f0; /* Color de fondo opcional */
-	padding: 10px;
+	margin-top: 100px;
 }
 .arrow-up{
 	width: 50px;
@@ -88,4 +76,28 @@ primero {
 .arrow-up::before{
 	content: "\25B2";
 	font-size: 24px;
+}
+.barra-fija { 
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	background-color: transparent; 
+	color: white; 
+	text-align: center; 
+	padding: 10px 0; 
+	z-index: 1000; 
+}
+.primer-linea-fija::first-line { 
+	position: sticky; 
+	top: 50px; 
+	background-color: rgb(231, 166, 81);
+}
+.nombre{
+	text-align: left;
+}
+.acerca-de { 
+	max-height: 300px; 
+	overflow-y: auto; 
+	padding: 10px; 
+	border: 1px solid #ccc; 
 }
