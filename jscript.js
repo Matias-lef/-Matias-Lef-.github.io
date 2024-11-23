@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit');
     const messageElement = document.getElementById('message');
     
-    // Generar un número aleatorio entre 1 y 100
     const randomNumber = Math.floor(Math.random() * 100) + 1;
 
     submitButton.addEventListener('click', () => {
