@@ -2,7 +2,7 @@ header {
 	text-align: center;
 	color: black;
 	background-color: rgba(194, 145, 46, 0.884);
-	padding: 7px;
+	padding: 1%;
 }
 
 @keyframes girar {
